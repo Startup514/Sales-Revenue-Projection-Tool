@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Revenue Projection Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sales Revenue Projection Tool</h1>
+        <div class="input-section">
+            <label for="price">Price per Unit ($):</label>
+            <input type="number" id="price" placeholder="Enter price per unit">
+
+            <label for="units">Units Sold:</label>
+            <input type="number" id="units" placeholder="Enter units sold">
+
+            <label for="growth">Growth Rate (%):</label>
+            <input type="number" id="growth" placeholder="Enter growth rate">
+
+            <button onclick="calculateRevenue()">Calculate Revenue</button>
+        </div>
+        <div class="result-section">
+            <h2>Projected Revenue</h2>
+            <p id="revenueResult">$0.00</p>
+            <canvas id="revenueChart"></canvas>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
